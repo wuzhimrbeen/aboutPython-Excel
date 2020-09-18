@@ -1,0 +1,11 @@
+#create excel
+ workbook = xlwt.Workbook(encoding = 'ascii')
+
+#create sheet
+worksheet = workbook.add_sheet('My Worksheet')
+
+#write
+worksheet.write(0, 0, label = 'Row 0, Column 0 Value')
+
+#save
+workbook.save('Excel_Workbook.xls')
